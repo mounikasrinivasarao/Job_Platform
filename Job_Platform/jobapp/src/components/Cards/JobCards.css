@@ -1,0 +1,122 @@
+/* JobCards.css */
+.job-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url('https://tse4.mm.bing.net/th?id=OIP.TRMgQgxeaSM-bsaz27ewMQHaEK&pid=Api&P=0&h=220'); /* Replace 'path_to_your_image.jpg' with your image URL */
+  background-size: cover; /* Scale the background image to cover the entire element */
+  background-position: center;
+}
+
+.job-card {
+  flex: 0 0 calc(28% - 10px); /* Adjust the width to fit four cards in a row */
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px; /* Decrease padding for a smaller card */
+  margin: 8px;
+  width: 100%; /* Make each card 100% width within the container */
+  min-height: 250px; /* Adjust the height as needed */
+}
+
+.job-card .job-id {
+  font-size: 5px; /* Decrease the font size of the job ID */
+}
+
+.job-card img {
+  max-width: 100%;
+  max-height: 150px; /* Adjust the max-height to fit your image size */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-bottom: 8px;
+}
+
+
+.job-info {
+  text-align: center;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+select, button {
+  padding: 8px;
+}
+
+
+  /* JobCards.css */
+
+.hot-job {
+    background-color: #ffcccc; /* Red background for hot jobs */
+  }
+
+  /* JobCards.css */
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.4K_Mqal0XzMpKxUgiW9pgwHaFj&pid=Api&P=0&h=220'); /* Replace 'path_to_your_image.jpg' with your image URL */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-options select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filter-options button {
+    background-color: #0277BD; /* Blue background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-options button:hover {
+    background-color: #81D4FA; /* Darker blue on hover */
+  }
+
+  /* JobCards.css */
+
+/* Style for the "View Details" button */
+.details-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 10px;
+  background-color: #039BE5; /* Change the background color as needed */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.details-button:hover {
+  background-color: #01579B; /* Change the hover background color */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .job-cards-container {
+    justify-content: center;
+  }
+
+  .job-card {
+    flex: 0 0 calc(45% - 10px);
+  }
+}
+  

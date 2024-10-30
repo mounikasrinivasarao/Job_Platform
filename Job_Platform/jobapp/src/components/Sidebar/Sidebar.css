@@ -1,0 +1,80 @@
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #717D7E;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-list li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.sidebar-list li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-list li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-list li a svg {
+  margin-right: 10px;
+}
+
+/* Sidebar.css */
+
+.back-icon {
+  color: white; /* Change this to the desired color */
+  cursor: pointer;
+  font-size: 24px; /* Change this to adjust the icon size */
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+/* Additional styles for the icon on hover */
+.back-icon:hover {
+  color: #555; /* Change this to the desired hover color */
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .sidebar {
+    width: 100%; /* Make the sidebar full width */
+    left: -100%; /* Initially hide the sidebar */
+  }
+
+  /* Display the sidebar when open */
+  .sidebar.open {
+    left: 0;
+  }
+
+  /* Remove border for list items on smaller screens */
+  .sidebar-list li {
+    border-bottom: none;
+  }
+}

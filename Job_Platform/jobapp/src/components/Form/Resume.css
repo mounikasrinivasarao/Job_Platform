@@ -1,0 +1,86 @@
+/* Resume.css */
+
+/* Basic styles */
+/* ... */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px; /* Adjust the margin as needed */
+  background-image: url('https://tse4.mm.bing.net/th?id=OIP.TRMgQgxeaSM-bsaz27ewMQHaEK&pid=Api&P=0&h=220'); /* Replace 'path_to_your_image.jpg' with your image URL */
+  background-size: cover; /* Scale the background image to cover the entire element */
+  background-position: center;
+}
+
+.form-box {
+  width: 600px; /* Increased width of the box */
+  padding: 40px; /* Increased padding inside the box */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slightly increased shadow */
+  background-color: #fff;
+}
+
+/* Resume.css */
+
+/* Styles for form-container */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for form-box */
+.form-box {
+  padding: 20px;
+}
+
+/* Styles for labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Styles for input fields */
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styles for buttons */
+button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #4FC3F7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #01579B;
+}
+
+
+/* Adjustments for larger screens */
+@media screen and (min-width: 1200px) {
+  .form-box {
+    width: 40%;
+  }
+  
+  /* Additional responsive adjustments */
+}
+/* Additional styles for form elements can be added as needed */
+/* You can modify colors, sizes, margins, etc. according to your design */

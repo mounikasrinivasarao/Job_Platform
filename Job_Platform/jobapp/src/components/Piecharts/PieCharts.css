@@ -1,0 +1,36 @@
+/* PieCharts.css */
+#JobCards {
+  text-align: center;
+}
+
+#JobCards h1 {
+  margin: 0; /* Remove default margin */
+}
+
+.job-search-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.8Rb8G5NJapDfrKH7mnQR_wHaFj&pid=Api&P=0&h=220'); /* Replace 'path_to_your_image.jpg' with your image URL */
+  background-size: cover; /* Scale the background image to cover the entire element */
+  background-position: center;
+}
+
+.chart-container {
+  width: 70%;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust grid layout for smaller screens */
+  .job-search-page {
+    grid-template-columns: 1fr; /* Display one column for smaller screens */
+    grid-gap: 10px; /* Adjust grid gap for better spacing on smaller screens */
+  }
+
+  /* Adjust chart container width for smaller screens */
+  .chart-container {
+    width: 100%; /* Set full width for smaller screens */
+    margin-bottom: 15px; /* Increase bottom margin for better separation */
+  }
+}

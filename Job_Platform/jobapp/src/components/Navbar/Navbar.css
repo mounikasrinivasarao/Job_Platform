@@ -1,0 +1,114 @@
+/* Navbar.css */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4c93d2;
+  /* Add more styling as needed */
+}
+
+.sidebar-icon {
+  cursor: pointer;
+  /* Add styles for sidebar icon */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* Add styles for user info */
+}
+
+.user-info span {
+  font-size: 24px; /* Adjust the font size as needed */
+  /* Other styles if required */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  /* Add styles for search bar */
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* Add input styles */
+}
+
+.search-icon {
+  margin-left: 5px;
+  cursor: pointer;
+  /* Add styles for search icon */
+}
+
+.scroll-to-sections {
+  display: flex;
+  /* Add styles for scroll to sections */
+}
+
+.header-buttons {
+  display: flex;
+  /* Add styles for header buttons */
+}
+
+.header-link {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Add styles for header links */
+}
+
+/* Example for collapsing navigation links */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide navigation links by default */
+  }
+
+  /* Style for hamburger menu icon */
+  .hamburger-menu {
+    display: block; /* Display for smaller screens */
+    /* Add styling for the hamburger icon here */
+  }
+
+  /* Display the navigation links when the hamburger icon is clicked or toggled */
+  .hamburger-menu.active + .navbar-links {
+    display: block;
+    /* Additional styling for the dropdown menu */
+  }
+}
+/* Example for responsive logo */
+.logo {
+  max-width: 100%; /* Allow the logo to resize according to the container */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Example for navbar layout adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 10px; /* Decrease padding for smaller screens */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+
+  .navbar-item {
+    margin-bottom: 10px; /* Add margin between navbar items */
+  }
+}
+/* Example for search bar adjustments */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-basis: 100%; /* Occupy full width on smaller screens */
+    margin: 10px 0; /* Adjust margins for better spacing */
+  }
+
+  input[type="text"] {
+    width: 100%; /* Occupy full width of the search bar container */
+  }
+}
+

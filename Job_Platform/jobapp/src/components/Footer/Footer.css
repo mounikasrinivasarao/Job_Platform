@@ -1,0 +1,64 @@
+.site-footer {
+  background-image: url('https://tse4.mm.bing.net/th?id=OIP.kRvx4wDEXz7nMOS6CUkCJgHaDf&pid=Api&P=0&h=220'); /* URL to your background image */
+  background-color: #888; /* Fallback color */
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 1px;
+}
+
+  
+  .footer-content {
+    flex: 1 1 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-content ul li a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .social-links li {
+    margin-bottom: 0;
+  }
+  
+  .social-links li a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .site-footer {
+      padding: 20px;
+    }
+  
+    .footer-content {
+      flex: 1 1 100%;
+    }
+  }
+  

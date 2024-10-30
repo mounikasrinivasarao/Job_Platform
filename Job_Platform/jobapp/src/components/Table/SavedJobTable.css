@@ -1,0 +1,79 @@
+/* Section styles */
+section {
+  margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#table {
+  text-align: center;
+}
+
+#table h2 {
+  margin: 0; /* Remove default margin */
+}
+
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.Dg4KFbJobF_Zpqpb3W-bhwHaEo&pid=Api&P=0&h=220'); /* Replace 'path_to_your_image.jpg' with your image URL */
+  background-size: cover; /* Scale the background image to cover the entire element */
+  background-position: center;
+  font-weight: bold;
+}
+
+/* Top companies table */
+.top-companies-table {
+  border: 2px solid #000;
+}
+
+.top-companies-table th {
+  background-color: #e6e6e6;
+}
+
+/* Saved jobs table */
+.saved-jobs-table {
+  color: #333; /* Adjusted text color for better readability */
+}
+
+/* Responsive table */
+@media only screen and (max-width: 768px) {
+  table {
+    font-size: 14px; /* Reduced font size for smaller screens */
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+  }
+
+  table td {
+    display: block;
+    text-align: left;
+    padding: 8px; /* Adjusted padding for better spacing on smaller screens */
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 100px; /* Adjust width based on content */
+    margin-right: 5px;
+  }
+}
